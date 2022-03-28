@@ -1,6 +1,10 @@
-const db = require('../database/models');
+const mainRoutes = require('./routes/main');
 
-db.Items.findAll()
-    .then(result => {
-        console.log(result);
-    })
+const express = require('express');
+const app = express();
+
+app.listen(3030, () => {
+    console.log('Servidor corriendo en el puerto 3030');
+});
+
+app.use('/', mainRoutes);
