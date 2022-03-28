@@ -2,13 +2,13 @@ const db = require('../../database/models');
 
 const controller = {
     index: (req, res) => {
-        db.Planets.findAll()
+        db.Users.findAll()
             .then(result => {
                 res.json(result);
             })
     },
     find: (req, res) => {
-        db.Planets.findAll({where: {id: req.params.id}})
+        db.Users.findAll({where: {id: req.params.id}})
             .then(reqsult => {
                 res.json(result);
             })
