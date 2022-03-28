@@ -5,10 +5,10 @@
   "main": "app.js",
   "dependencies": {
     "express": "^4.17.3",
+    "heroku": "^7.60.0",
     "mysql2": "^2.3.3",
     "sequelize": "^6.17.0"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
