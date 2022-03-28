@@ -9,7 +9,7 @@ const controller = {
     },
     find: (req, res) => {
         db.Planets.findAll({where: {id: req.params.id}})
-            .then(reqsult => {
+            .then(result => {
                 res.json(result);
             })
     }

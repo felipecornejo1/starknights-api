@@ -9,7 +9,7 @@ const controller = {
     },
     find: (req, res) => {
         db.Users.findAll({where: {id: req.params.id}})
-            .then(reqsult => {
+            .then(result => {
                 res.json(result);
             })
     }
