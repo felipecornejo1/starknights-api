@@ -4,7 +4,6 @@ const itemRoutes = require('./routes/item');
 const solarSystemRoutes = require('./routes/solarSystem');
 const spaceshipRoutes = require('./routes/spaceship');
 const sunRoutes = require('./routes/sun');
-const transactionRoutes = require('./routes/transaction');
 const userRoutes = require('./routes/user');
 
 const express = require('express');
@@ -20,6 +19,5 @@ app.use('/items', itemRoutes);
 app.use('/solar-system', solarSystemRoutes);
 app.use('/spaceship', spaceshipRoutes);
 app.use('/sun', sunRoutes);
-app.use('/transaction', transactionRoutes);
 app.use('/user', userRoutes);
 
