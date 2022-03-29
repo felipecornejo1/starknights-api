@@ -12,10 +12,13 @@ const userRoutes = require('./routes/user');
 
 const express = require('express');
 const app = express();
+const cors = require('cors');
 
 app.listen(process.env.PORT || 3030, () => {
     console.log('Servidor corriendo en el puerto 3030');
 });
+
+app.use(cors());
 
 app.use('/', mainRoutes);
 app.use('/armor', armorRoutes);
