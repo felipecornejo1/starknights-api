@@ -4,13 +4,21 @@ const controller = {
     index: (req, res) => {
         db.Armor.findAll()
             .then(result => {
-                res.json(result);
+                return res.status(200).json({
+                    total: result.length,
+                    data: result,
+                    status: 200
+                });
             })
     },
     find: (req, res) => {
         db.Armor.findAll({where: {id: req.params.id}})
             .then(result => {
-                res.json(result);
+                return res.status(200).json({
+                    total: result.length,
+                    data: result,
+                    status: 200
+                });
             })
     }
 }
