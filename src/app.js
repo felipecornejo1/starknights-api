@@ -31,4 +31,3 @@ app.use('/solar-system', solarSystemRoutes);
 app.use('/spaceship', spaceshipRoutes);
 app.use('/sun', sunRoutes);
 app.use('/user', userRoutes);
-
